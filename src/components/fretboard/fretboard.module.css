@@ -1,0 +1,490 @@
+body { font-size: 16px;
+    margin:0;
+    padding:0;  
+    
+    
+
+}
+input, select { font-size: 100%; } /* these settings prevent iphone zoom behavior w inputs*/
+
+
+
+.FretboardContainer, .MobileTabContainer{
+    width:100%;
+    /* margin:0 auto; */
+    
+    
+    
+    
+}
+
+.FretboardContainer.MobileHidden, .MobileTabContainer.MobileHidden, .TabDocumentContainer.MobileHidden{
+    display:none;
+}
+
+.Neck{
+    
+    
+    
+    position:relative;
+    /* background:rgb(83, 19, 19); */
+    background: rgb(55, 7, 7);
+    /* background:url(https://cssauthor.com/wp-content/uploads/2015/10/Fine-Wood-Textures-1.jpg); */
+    /* overflow-y: scroll; */
+    
+    
+}
+
+
+.Fret, .ZeroFret{
+    position: relative;
+    width:100%;
+    height:65px; /*45px*/
+    border-bottom: solid grey 5px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.ZeroFret{
+    
+    background:black;
+}
+
+
+
+.dot{
+
+
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: rgb(223, 223, 157);
+    
+    display: inline-block;
+    border:0px;
+    padding:0px;
+    /* transform: translateY(-50%);  */
+    left:0;
+    /* top:40%; */
+}
+  
+.twodotA{
+
+    
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: rgb(223, 223, 157);
+    
+    display: inline-block;
+    border:0px;
+    padding:0px;
+    transform: translateY(-100%);  
+    left:0;
+    /* top:40%; */
+
+}
+  
+.twodotB{
+
+  
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: rgb(223, 223, 157);
+    
+    display: inline-block;
+    border:0px;
+    padding:0px;
+    transform: translateY(100%); 
+    left:0;
+    /* top:40%; */
+
+}
+  
+  
+  
+
+
+
+.NumDisplay{
+    
+    position:absolute;
+    /* background: black; */
+    color:white;
+    top:-30%;
+    left:0;
+    width:1em;
+}
+
+.Tuner{
+    width:100%;
+    height:45px;
+    background:black;
+    border-bottom: solid grey 5px; 
+    
+    
+    /* top:0px;
+    left:0px; */
+    
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.Tuner select{
+    border-radius: 5px;
+    transform:translateX(-50%);
+    margin-top:.5em;
+    appearance: none;
+    background:white;
+    color:black;
+}
+
+.StringContainer{
+    position:absolute;
+    
+    height:100%;
+    width:100%;
+    
+    top:0px;
+    left:0px;
+    display: flex;
+    justify-content: space-evenly;
+   }
+.String{
+    height:100%;
+    width:2px;
+    /* background:yellow; */
+    background:white;
+    z-index: 1;
+}
+
+
+
+.NoteBoxContainer{
+    /* position:absolute; */
+    
+    /* height:100%; */
+    width:100%;
+
+  
+    
+    /* top:0px;
+    left:0px; */
+    /* padding-top:19px 0; */
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.NoteWrapper{
+    height:20px;
+    width:2px;
+    z-index: 2;
+    text-align: center;
+}
+
+.ToolBar{
+    margin: 4px auto;
+    
+    
+    width:100%;
+    
+    /* height:40px; */
+    
+    
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    z-index: 3;
+    
+    /* top: -5px;
+    padding-top:5px;
+    z-index: 3; */
+    
+    background:white;
+    
+
+}
+
+
+
+.FlexToolBar{
+    margin: 4px auto;
+    
+    
+    width:100%;
+    
+    /* height:40px; */
+    
+    
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    z-index: 3;
+    
+    /* top: -5px;
+    padding-top:5px;
+    z-index: 3; */
+    
+    background:white;
+    display:flex;
+    justify-content: space-around;
+}
+
+
+
+
+.FlexToolBar p{
+    text-align: center;
+    font-size: 8px;
+    margin-top: 2px;
+}
+
+
+.CenteredToolBar{
+    margin: 4px auto;
+    text-align: center;
+    width:100%;
+    
+}
+
+
+.SliderContainer{
+    width: 100%;
+    text-align: center;
+}
+.CenteredSlider{
+    width: 70%;
+    margin: 20px auto;
+    
+}
+
+.TabDisplayMobile{
+    width:100%;
+    
+}
+
+
+.ToolBarIcon, .MobileToolBarIcon{
+    font-size: 30px;
+    padding:5px 10px;
+    /* border: 1px solid grey; */
+    cursor: pointer;
+    /* margin-right: 20px; */
+}
+
+.ShuttleWrapper{
+    width: 80%;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;
+    background:rgb(135, 255, 205);
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px darkgray;
+}
+
+
+.CoolButton {
+    background:rgb(135, 255, 205);
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px darkgray;
+    margin-top: 15px;
+}
+
+.ButtonGroup{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+
+.LenDisplay{
+    display: inline-block;
+    width:2em;
+}
+
+.InputsGroup{
+    background: #ffc6c6;
+    padding: 3px 0 10px 0;
+}
+
+
+.NoteBox{
+    height:20px;
+    width:20px;
+    /* background: pink; */
+    background:#ffd6d6;
+    border-radius: 4px;
+    transform:translateX(-50%);
+    cursor:pointer;
+
+}
+
+
+
+.NoteBox.Active{
+    background: rgb(70, 70, 228);
+    color:white;
+    
+}
+
+
+
+.NoteBox span{
+    font-size: medium;
+    cursor: pointer;
+}
+
+
+.TabDocumentContainer{
+    height:100%;
+}
+
+.MiniButton{
+    display:inline;
+    
+}
+
+.SimpleButton{
+    box-shadow: none;
+    background:white;
+    padding: 2px 4px;
+    border: black solid 2px;
+    margin-bottom: 10px;  
+    color:black; 
+    
+}
+
+.SimpleButton:focus{
+    background: white;
+}
+
+.SimpleButton.SimpleButtonInactive{
+    color:darkgray;
+    border: rgb(105, 105, 105) solid 2px;
+}
+.SimpleButton.SimpleButtonInactive:hover{
+    color:darkgray;
+    border: rgb(105, 105, 105) solid 2px;
+    background: white;
+    cursor: default;
+}
+
+
+button {
+    touch-action: manipulation;
+}
+
+
+.logo{
+    /* margin-top: -3px; */
+    text-align: center;
+    display: block;
+    cursor:pointer;
+    background: transparent;
+    color:black;
+    border-radius: 5px;
+    text-decoration: underline;
+    padding:3px;
+}
+
+@media (min-width: 768px){
+    
+    body{
+        margin:0 100px;
+        background: black;
+        background-image: url(https://images.unsplash.com/photo-1549119246-cf57ef8a17b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+        background-size:     cover;                      /* <------ */
+        background-repeat:   no-repeat;
+        /* background-position: center center;  */
+    }
+    
+    .FretboardContainer{
+        width:400px;
+        /* margin: 0 30px 0 30px; */
+        
+    }
+    .Neck{
+        overflow-y: scroll;
+        height:80vh;
+        border-radius: 10px;
+
+
+    }
+
+    /* .String{
+        position: relative;
+        min-height: 100%;
+    } */
+
+    .StringContainer{ /* having trouble getting this to automatically fill parent height; hard coding for now :( */
+        height:1690px;        
+    }
+
+    .InsideNeck{
+        position: relative;
+        height:100%;
+    }
+
+    .FretboardContainer.MobileHidden, .TabContainer.MobileHidden .MobileTabContainer.MobileHidden{
+        display:block;
+    }
+    .MobileTabContainer.MobileTabContainer.MobileHidden, .TabDocumentContainer.MobileHidden{
+        display:unset;
+        
+        
+    }
+
+    .MobileTabContainer{
+        width:400px;
+        margin:0;
+    }
+
+    .TabDocumentContainer{
+        width:400px;
+        margin:0;
+    }
+
+    .MobileToolBarIcon{
+        display: none;
+    }
+
+    .FlexToolBar{
+        background:rgb(217, 219, 233);
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .TabDisplayContainer{
+        background: rgba(76, 92, 106, 0.56);
+        border-radius: 10px;
+        padding: 5px 0 20px 0;
+        margin: 5px 0;
+    }
+    
+    
+    
+    .FullScreenHidden{
+        display: none;
+    }
+
+    .FullScreen{
+        height:100vh;
+        display:flex;
+        justify-content: space-around;
+        
+    }
+
+    .logo{
+        position:fixed;
+        bottom:0;
+        left:50%;
+        color:white;
+    }
+}

@@ -1,0 +1,120 @@
+.TabTextChar{
+    margin:0;
+    font-family: 'Courier New', Courier, monospace;
+    color:black;
+    
+    
+    
+}
+
+.RulerTextChar{
+    margin:0;
+    font-family: 'Courier New', Courier, monospace;
+    color:black;
+    background: rgb(235, 235, 235);
+    height: 1em;
+    font-weight: bold;
+    padding-bottom: 5px;
+    font-size: small;
+    border-bottom: 6px white solid;
+}
+
+.RulerTextChar span{
+    
+    color:black;
+    height:100%;
+
+}
+
+.DummyTextChar{
+    margin:0;
+    font-family: 'Courier New', Courier, monospace;
+    color:darkgray;
+}
+
+.TabTextCol{    
+    display: inline-block;
+    margin-bottom: 20px;
+    background: lightgoldenrodyellow;
+    
+    
+}
+
+.SelectedCol{
+    
+    /* background:rgb(59, 198, 245); */
+    /* border-right: solid blue 1px; */
+    box-shadow: -3px 0 0px blue inset;
+    
+}
+
+
+
+.SelectedOverwrite{
+    background: lightsalmon;
+}
+
+.SelectedStart{
+    border-left: 3px solid blue;
+}
+
+
+.TabCursor{
+    margin: 20px auto 5px auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.TabCursor h1{
+    text-align: center;
+}
+
+
+.InputWrapper{
+    margin-top: 25px;
+}
+
+.TabInput {
+    
+    width: 3em;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    background:rgb(255, 142, 97);
+    color:black;
+    border: black solid 2px;
+    margin: 1px;
+}
+
+.TerminateReached, .TerminateUnreached{
+    width: 10px;
+    border-radius: 5px;
+    height: 3em;
+    background:black;
+    margin: auto 5px;
+    transform: translateY(-25%);
+
+}
+
+.TerminateUnreached{
+    
+
+
+    background:white;
+}
+
+
+@media (min-width: 768px){
+
+    .TabTextChar, .DummyTextChar{
+        font-size: 20px;
+    }
+
+
+    
+}
