@@ -57,7 +57,7 @@ class TuningModal extends Component {
         let selectData=this.props.noteList.map(item=>({value:item, display:item}))
         let octaveSelectData=[1,2,3,4,5,6].map(item=>({value:item.toString(), display:item}))
 
-        let selectList=this.state.currentTuning.map((item,index)=><div className={TuningModalStyle.TunerRow}>
+        let selectList=this.state.currentTuning.map((item,index)=><div key={'selectL'+index} className={TuningModalStyle.TunerRow}>
                 <Select value={item} optionsList={selectData} style={TuningModalStyle} changeHandle={this.changeCurrentTuning} string={index} />
                 <Select value={this.state.currentOctaves[index]} optionsList={octaveSelectData} style={TuningModalStyle} string={index} changeHandle={this.changeOctaves} />
                 <button className={TuningModalStyle.AuditionButton} onClick={()=>{this.props.auditionNote(item, this.state.currentOctaves[index])}}><FontAwesomeIcon icon={faVolumeOff} /></button>

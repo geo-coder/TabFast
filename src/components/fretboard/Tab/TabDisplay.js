@@ -174,14 +174,15 @@ const TabDisplay = (props) =>{
         <Modal show={showAbout}>
             <div style={{textAlign:'center'}}>
             <h2>About TabFast</h2>
-            <p>Created by George Moore, 2020, using React.js. This is just a demo, but happy to add functionality if there is interest. Comments and feedback welcome. </p>
+            <p>Created by George Moore, 2020, using React.js. This is just a beta/demo, but happy to add functionality if there is interest. There are some bugs with this, especially with mobile viewing, so feedback is welcome. </p>
             
             <a href="https://twitter.com/georgemoore32" target="_blank" rel="noopener noreferrer">
-            <img src={twitter} alt='Twitter icon' style={{height:'30px', width: '30px'}}></img>
+                <img src={twitter} alt='Twitter icon' style={{height:'30px', width: '30px'}}></img>
             </a>
             
-            <img src={github} alt='GitHub icon' style={{height:'30px', width: '30px', marginLeft:'10px'}}></img>
-
+            <a href="https://github.com/geo-coder/TabFast" target="_blank" rel="noopener noreferrer">
+                <img src={github} alt='GitHub icon' style={{height:'30px', width: '30px', marginLeft:'10px'}}></img>
+            </a>
             <br/><br/>
             <button onClick={toggleAbout}>Ok</button>
             </div>
