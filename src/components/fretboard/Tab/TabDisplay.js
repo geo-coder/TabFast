@@ -83,10 +83,13 @@ const TabDisplay = (props) =>{
             
                 
                 <p>Viewer length: <span className={styles.LenDisplay}>{props.totalTabCols}</span>
-                <span>
+                {/* <span> */}
                     <button className={styles.MiniButton} onClick={()=>{props.changeTotalTabCols(-1)}}>▼</button>
+                    
                     <button className={styles.MiniButton} onClick={()=>{props.changeTotalTabCols(1)}}>▲</button>                
-                </span></p>
+                {/* </span> */}
+                
+                </p>
                 
                 
                 <div className={styles.ButtonGroup}>

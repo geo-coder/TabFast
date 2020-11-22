@@ -185,8 +185,8 @@ const TabDocument = (props) =>{
                
                 <p>Staff length: <span className={styles.NumDisplay}>{props.staffLength}</span>
                 <span>
-                    <button onClick={()=>{props.changeStaffLength(-1)}}>▼</button>
-                    <button onClick={()=>{props.changeStaffLength(1)}}>▲</button>                
+                    <button className={styles.MiniButton} onClick={()=>{props.changeStaffLength(-1)}}>▼</button>
+                    <button className={styles.MiniButton} onClick={()=>{props.changeStaffLength(1)}}>▲</button>                
                 </span>
                 </p>
 
@@ -198,8 +198,8 @@ const TabDocument = (props) =>{
                     <div className={styles.InputWrapper}>
                         <p>Column width: <span className={styles.NumDisplay}>{props.barSpacing}</span>
                         <span>
-                            <button onClick={()=>{props.changeBarSpacing(-1)}}>▼</button>
-                            <button onClick={()=>{props.changeBarSpacing(1)}}>▲</button>                
+                            <button className={styles.MiniButton} onClick={()=>{props.changeBarSpacing(-1)}}>▼</button>
+                            <button className={styles.MiniButton} onClick={()=>{props.changeBarSpacing(1)}}>▲</button>                
                         </span>
                         </p>
                     </div>
@@ -241,10 +241,10 @@ const TabDocument = (props) =>{
             
             <br/>
 
-            <p>Spaces between staves: <span> <span className={styles.NumDisplay}>{props.betweenStave} </span>
+            <p>Lines Between Staves: <span> <span className={styles.NumDisplay}>{props.betweenStave} </span>
             
-                <button onClick={()=>{props.changeBetweenStave(-1)}}>▼</button>
-                <button onClick={()=>{props.changeBetweenStave(1)}}>▲</button>
+                <button className={styles.MiniButton} onClick={()=>{props.changeBetweenStave(-1)}}>▼</button>
+                <button className={styles.MiniButton} onClick={()=>{props.changeBetweenStave(1)}}>▲</button>
                 </span>
             </p>
             

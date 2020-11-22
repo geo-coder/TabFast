@@ -64,14 +64,41 @@ button:hover{
     margin-top: 10px;
 }
 
+.MiniButton{
+    display:inline;
+    margin: 5px;
+    
+}
+
 
 @media (min-width: 768px){
 
-.DocContainer textarea{
-    border-radius: 10px;
-    /* height:60vh; */
-    height:100%;
-    background: rgb(223, 223, 223);
+    .DocContainer textarea{
+        border-radius: 10px;
+        /* height:60vh; */
+        height:60vh;
+        background: rgb(223, 223, 223);
+    }
+  
+
+    .DocContainer {
+        /* width: 400px; */
+        width:80%;
+        margin: 0 auto;
+    }
+
 }
+
+
+@media(min-width:1440px){
+
+    .DocContainer textarea{
+        border-radius: 10px;
+        /* height:60vh; */
+        height:100%;
+        background: rgb(223, 223, 223);
+    }
+
+
 
 }
